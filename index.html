@@ -13,11 +13,11 @@
     <p>Evento disparado pelo onClick do botão esquerdo do mouse.<br>
     Exemplos:
     </p>
-    <button>onClick no Botão</button>
+    <button id="btnOnClick">onClick no Botão</button>
     <br>
-    <a href="">onClick no link</a>
+    <a href="" id="link">onClick no link</a>
     <br>
-    <p>onClick em um paragrafo.</p>
+    <p id="paragrafo">onClick em um paragrafo.</p>
 </section>
     <hr>
 <section>
@@ -25,13 +25,14 @@
     <p>Evento disparado pelo usúario quando clica no botão de enviar um formulário.<br>
     Exemplos:
     </p>
-
+<form>
     <label for="inp_text">Nome:</label>
     <input type="text" id="inp_text">
-    <input type="submit" value="Enviar para outra pagina">
+    <input id="sub" type="submit" value="Enviar para outra pagina">
     <br>
     <br>
-    <input type="submit" value="Download">
+    <input type="submit" id="down" value="Download">
+</form>
 </section>
 <hr>
 <section>
@@ -40,7 +41,7 @@
     <span>onMouseOut</span>
     <p>Evento disparado quando o ponteiro do mouse é retirado de cima do elemento.</p>
     <a href="">onMouseOut e onMouseOver no Link</a>
-    <button>botão</button>
+    <button id="btn_mouseOverOut">botão</button>
 </section>
 <hr>
 <section>
@@ -50,10 +51,11 @@
     <span>onBlur</span>
     <p>Evento disparado quando elemento perde o foco</p>
     <br>
-    <label for="inp_matricula">Matricula:</label>
+    <label for="inp_matricula" >Matricula:</label>
     <input type="text" id="inp_matricula">
     <label for="inp_nome">Nome:</label>
     <input type="text" id="inp_nome">
+    <pre id="texto"></pre>
 </section>
 <hr>
 <section>
@@ -75,4 +77,5 @@
 </section>
 
 </body>
+<script src="dom.js"></script>
 </html>
